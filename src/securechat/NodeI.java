@@ -8,7 +8,7 @@ import javax.crypto.SealedObject;
 
 public interface NodeI extends Remote {
 
-    int numberOFNodes = 4;
+    int numberOFNodes = 3;
     String[] ipAddr = {"127.0.0.1", "127.0.0.1", "127.0.0.1"};
     String[] services = {"Alice", "Bob", "Larry"};
     Integer[] ports = {2000, 3000, 4000};
