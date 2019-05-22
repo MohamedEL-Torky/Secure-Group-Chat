@@ -41,3 +41,7 @@ If you want to add one more client to be total of 4 clients, You will have to ed
 * **ports** -> {2000, 3000, 4000, 5000};
 
 Note that, when you run the java file for that specific client for example Alice which run on localhost:2000 you might get registery exception because there is another service on your pc use the same port **2000**. So all what you have to do is to change 2000 to any port number in the NodeI.java
+
+### How to change certficate signing algorithm:
+* Got to Node.java at line **46** change mAlgorithm to -> "ECC" or "RSA" then run the client after that change.
+Keep in mind you can run multiplte clients with diffrent certficate signing algorithms, for example run Client 0 which is alice with **ECC** then go edit lint 46 to run BOB which is client 1 with **RSA** and both can change cerfticates and will be able to verfiy and see it's contents.
